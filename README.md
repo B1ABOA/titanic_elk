@@ -1,1 +1,68 @@
-# titanic_elk
+# 📊 ELK 스택을 이용한 타이타닉 데이터 분석
+
+## 프로젝트 개요
+
+이 프로젝트는 Kaggle의 타이타닉 데이터를 Ubuntu 서버에서 ELK(Elasticsearch, Logstash, Kibana) 스택을 설정하여 분석하는 과정을 보여줍니다. 
+타이타닉 데이터는 MySQL에 저장되고, Elasticsearch를 통해 불러온 뒤, Kibana를 사용하여 시각화합니다.
+
+## ⚙️ 설정
+
+1. **MySQL JDBC 드라이버 다운로드:**
+   ```bash
+   # 다운로드
+   wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.18.zip
+   # 다운로드한 파일 압축 해제:
+   tar -xvzf mysql-connector-java-8.0.18.tar.gz
+   # JDBC 드라이버 JAR 파일을 Logstash의 디렉토리에 복사
+   sudo cp mysql-connector-java-8.0.18/mysql-connector-java-8.0.33.jar /usr/share/logstash/logstash-core/lib/jars/
+
+
+
+2. **Logstash 설정 파일 작성:**
+   - /etc/logstash/conf.d/ 경로에 생성
+   ```conf
+   input {
+    jdbc {
+     jdbc_driver_library => "/usr/share/logstash/logstash-core/lib/jars/mysql-connector-java-8.0.18.jar"
+     jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+     jdbc_connection_string => "jdbc:mysql://localhost:3306/your_database"
+     jdbc_user => "your_username"
+     jdbc_password => "your_password"
+     statement => "select * from titanic_raw"
+    }
+   }
+
+   output {
+
+   # 콘솔창에 어떤 데이터들로 필터링 되었는지 확인
+   stdout {
+     codec => rubydebug
+   }
+
+    # 위에서 설치한 Elasticsearch 로 "bank" 라는 이름으로 인덱싱 
+    elasticsearch {
+      hosts => ["http://localhost:9200"]
+      index => "titanic"
+    }
+   }
+ 4. **elasticsearch & logstash 재가동:**
+    ```bash
+    # 재가동
+    sudo systemctl restart elasticsearch
+    sudo systemctl restart logstash
+    # 가동 확인
+    sudo systemctl status elasticsearch
+    sudo systemctl status logstash
+
+## 📝 타이타닉 데이터 분석
+
+타이타닉 데이터셋은 타이타닉호에 탑승한 승객에 대한 정보를 제공합니다. 이 분석은 다음에 중점을 둡니다:
+1. 클래스별 생존율: 클래스가 높을수록 생존율이 높음.
+2. 클래스별 연령 분포: 클래스가 높을수록 고령층이 많이 분포함. 이는 나이가 들수록 부를 축적하게 되는 경향을 나타냄.
+
+이 통찰을 바탕으로 부유한 고령층 승객을 대상으로 여행 보험을 제안하는 비즈니스 아이디어를 제시합니다.
+
+## 📊 분석 데이터 시각화
+1. **클래스별 생존율:**
+   
+## ➕ 결론
