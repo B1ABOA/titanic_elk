@@ -51,7 +51,7 @@
      codec => rubydebug
    }
 
-    # 위에서 설치한 Elasticsearch 로 "bank" 라는 이름으로 인덱싱 
+    # 위에서 설치한 Elasticsearch 로 "titanic" 라는 이름으로 인덱싱 
     elasticsearch {
       hosts => ["http://localhost:9200"]
       index => "titanic"
@@ -119,7 +119,7 @@
 
 > 영국의 산업노동자 승객 타겟으로한 여행상품을 더 많이 만들 수 있습니다. 
 
-2. **성별 평균 생존 비율** <br />
+2. **성별에 따른 생존율 & 연령대별 생존율** <br />
 <table>
   <tr>
     <td> <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
@@ -137,27 +137,23 @@
 </table>
 
  > 2와 3의 분석과 관련된 연구 논문
-      "https://www.pnas.org/doi/abs/10.1073/pnas.0911303107"
-      - 타이타닉호의 생존자들 중 여성과 어린이 그리고 상대적으로 가격이 높은 등급 객실의 사람들의 생존율이 높은 원인에 대해서 연구
-      - 느리게 침몰하는 타이타닉호 (2시간 40분)에서는 사회적으로 결정된 행동 패턴이 다시 나타날 수 있다.
-      - 반면 루시타니아호 (18분)에서는 단기 비행 충동으로 인해 행동이 지배되어 사회적 규범이 의미가 없어졌다.
+      "https://www.pnas.org/doi/abs/10.1073/pnas.0911303107" <br />
+      - 타이타닉호의 생존자들 중 여성과 어린이 그리고 상대적으로 가격이 높은 등급 객실의 사람들의 생존율이 높은 원인에 대해서 연구 <br />
+      - 느리게 침몰하는 타이타닉호 (2시간 40분)에서는 사회적으로 결정된 행동 패턴(사회적 규범)이 다시 나타날 수 있다.<br />
+      - 반면 루시타니아호 (18분)에서는 단기 비행 충동으로 인해 행동이 지배되어 사회적 규범이 의미가 없어졌다.<br />
 
-4. **클래스별 연령 분포** <br />
-   <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
+ - 즉. 타이타닉에서 여성, 어린이, 경제적지위가 높은 자들이 생존할 수 있었던 것은 사회적 규범이 작용했기 때문이라고 볼 수 있는데, <br />
+    이 규범이 작용하는 데에는 적은 시간에서는 단기 비행 충동으로 인해 작용하기 어렵다.
 
-5. **동반 자식 유무별 생존율** <br />
+4. **동반 자식 유무별 생존율** <br />
    <img src="https://github.com/user-attachments/assets/9f40e44b-07a9-4e78-bd0e-2756f3f07925" />
    
 
-6. **클래스별 성별 평균 생존 비율** <br />
-<table>
-  <tr>
-    <td> <img src="https://github.com/user-attachments/assets/d70490c3-6786-460d-9e87-a21c36bb0a01" /></td>
-    <td><img src="https://github.com/user-attachments/assets/d7b7e25e-26d2-472b-a392-7be265c8b2a3"></td>
-  </tr>
-</table>
-
-
+5. **클래스별 성별 평균 생존 비율** <br />
+   <img src="https://github.com/user-attachments/assets/d70490c3-6786-460d-9e87-a21c36bb0a01" />
+6. **클래스3 남성의 연령대별 생존율** <br />
+   <img src="https://github.com/user-attachments/assets/d7b7e25e-26d2-472b-a392-7be265c8b2a3">
+  
 ## ➕ 결론 및 제안
  1. 3등급 승객의 사망 비율이 높음.
  2. 3등급 승객 중 남성의 사망 비율이 특히 높음: 3등급 승객 중 남성의 사망 비율이 특히 높다는 결과를 확인했습니다.
