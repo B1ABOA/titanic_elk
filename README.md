@@ -89,7 +89,7 @@
 
 
 3-1. **클래스별 성별 평균 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/df23f45d-fc29-42f0-b16e-4128ab6dfcb6" />
+   <img src="https://github.com/user-attachments/assets/d70490c3-6786-460d-9e87-a21c36bb0a01" />
 
 3-2. **성별 평균 생존 비율** <br />
    <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
