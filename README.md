@@ -80,7 +80,8 @@
    <img src="https://github.com/user-attachments/assets/e2adb8c6-0693-44fc-95e6-85710edd00de" />
 
 2. **등급별 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/245a3ff2-7c0a-4c1c-aeb9-e417f6079645" />
+   <img width="450" alt="image" src="https://github.com/user-attachments/assets/245a3ff2-7c0a-4c1c-aeb9-e417f6079645"/>
+   <img width="450" alt="image" src="https://github.com/user-attachments/assets/3df09c67-bc45-47ec-9f1f-0eef204b35bb">
 
 3-1. **클래스별 성별 평균 생존 비율** <br />
    <img src="https://github.com/user-attachments/assets/3569bf57-c700-4591-bbda-78f46011ec91" />
@@ -88,8 +89,11 @@
 3-2. **성별 평균 생존 비율** <br />
    <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
 
-4. **클래스별 연령 분포** <br />
+4-1. **클래스별 연령 분포** <br />
    <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
+   
+4-2. **연령대별 생존 비율** <br />
+   <img src="https://github.com/user-attachments/assets/2080e185-ac0b-43b7-acf6-83e78d9fe8b2"/>
 
 5. **항구별 클래스 인원 비율** <br />
    <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />   
