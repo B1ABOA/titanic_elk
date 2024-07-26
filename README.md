@@ -44,7 +44,7 @@
      codec => rubydebug
    }
 
-    # 위에서 설치한 Elasticsearch 로 "bank" 라는 이름으로 인덱싱 
+    # 위에서 설치한 Elasticsearch 로 "titanic" 이라는 이름으로 인덱싱 
     elasticsearch {
       hosts => ["http://localhost:9200"]
       index => "titanic"
