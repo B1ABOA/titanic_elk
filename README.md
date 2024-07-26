@@ -25,7 +25,6 @@
 
 
 2. **Logstash 설정 파일 작성:**
-   - Install MySQL JDBC Driver 설치
    - /etc/logstash/conf.d/ 경로에 생성
    ```conf
    input {
