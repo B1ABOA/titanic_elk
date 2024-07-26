@@ -77,7 +77,7 @@
 
 ## 📊 분석 데이터 시각화
 1. **동반 인원 수별 등급 비율** <br />
-   <img src="https://github.com/user-attachments/assets/105fc49f-cefe-4293-9972-377460f51134" />
+   <img src="https://github.com/user-attachments/assets/a18af5c9-157d-446f-9f79-63db0fdec22b" />
 
 2. **등급별 생존 비율** <br />
 <table>
