@@ -12,23 +12,16 @@
 
 
 
-## 프로젝트 개요
+## 🟢 프로젝트 개요
 
-이 프로젝트는 [Kaggle의 타이타닉 데이터](https://www.kaggle.com/competitions/titanic/data?select=train.csv)를 Ubuntu 서버에서 ELK(Elasticsearch, Logstash, Kibana) 스택을 설정하여 분석하는 과정을 보여줍니다. 
+이 프로젝트는 Kaggle의 타이타닉 데이터를 Ubuntu 서버에서 ELK(Elasticsearch, Logstash, Kibana) 스택을 설정하여 분석하는 과정을 보여줍니다. 
 타이타닉 데이터는 MySQL에 저장되고, Elasticsearch를 통해 불러온 뒤, Kibana를 사용하여 시각화합니다.
+
+[데이터 출처] : https://www.kaggle.com/competitions/titanic/data?select=train.csv <br />
 
 ## ⚙️ 설정
 
 1. **MySQL JDBC 드라이버 다운로드:**
-   
-    config 파일을 작성하기 전에 JDBC는 기본적으로 제공되지가 않기 때문에 다운로드해야 합니다.
-    
-   JDBC는 다양한 데이터 소스에 대응하는 많은 인풋 플러그인을 가지고 있고 플러그인 구조로 확장이 가능하기 때문 
-   
-   -> 모든 데이터 소스에서 데이터를 불러오는 데 편리하게 활용. 
-      
-   => 즉 쉽게 말해 DB에서 logstash를 연동해 주는 플러그인이라고 생각하면 됩니다.
-
    ```bash
    # 다운로드
    wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.18.zip
@@ -36,7 +29,8 @@
    tar -xvzf mysql-connector-java-8.0.18.tar.gz
    # JDBC 드라이버 JAR 파일을 Logstash의 디렉토리에 복사
    sudo cp mysql-connector-java-8.0.18/mysql-connector-java-8.0.33.jar /usr/share/logstash/logstash-core/lib/jars/
-   ```
+
+
 
 2. **Logstash 설정 파일 작성:**
    - /etc/logstash/conf.d/ 경로에 생성
@@ -59,15 +53,13 @@
      codec => rubydebug
    }
 
-    # 위에서 설치한 Elasticsearch 로 "titanic" 이라는 이름으로 인덱싱 
+    # 위에서 설치한 Elasticsearch 로 "bank" 라는 이름으로 인덱싱 
     elasticsearch {
       hosts => ["http://localhost:9200"]
       index => "titanic"
     }
    }
-   ```
-   
- 3. **elasticsearch & logstash 재가동:**
+ 4. **elasticsearch & logstash 재가동:**
     ```bash
     # 재가동
     sudo systemctl restart elasticsearch
@@ -75,17 +67,39 @@
     # 가동 확인
     sudo systemctl status elasticsearch
     sudo systemctl status logstash
-    ```
 
 ## 📝 타이타닉 데이터 분석
+1. 동반 인원 수별 등급 비율: 3등급에서 동반 인원 수가 높음.
+2. 등급별 생존 비율: 3등급에서 사망비율이 가장 높다는 것을 알 수 있음.
+3. 클래스별 성별 평균 생존 비율: 각 클래스별로 남성의 사망율이 높음. 
+4. 클래스별 연령 분포: 전클래스에서 30-40대 비율높음. 어느정도 경제여력도 있고 여행을 가장 많이 즐기는 나이대로 보임.
 
-타이타닉 데이터셋은 타이타닉호에 탑승한 승객에 대한 정보를 제공합니다. 이 분석은 다음에 중점을 둡니다:
-1. 클래스별 생존율: 클래스가 높을수록 생존율이 높음.
-2. 클래스별 연령 분포: 클래스가 높을수록 고령층이 많이 분포함. 이는 나이가 들수록 부를 축적하게 되는 경향을 나타냄.
-
-이 통찰을 바탕으로 부유한 고령층 승객을 대상으로 여행 보험을 제안하는 비즈니스 아이디어를 제시합니다.
 
 ## 📊 분석 데이터 시각화
-1. **클래스별 생존율:**
-   
-## ➕ 결론
+1. **동반 인원 수별 등급 비율** <br />
+   <img src="https://github.com/user-attachments/assets/e2adb8c6-0693-44fc-95e6-85710edd00de" />
+
+2. **등급별 생존 비율** <br />
+   <img src="https://github.com/user-attachments/assets/245a3ff2-7c0a-4c1c-aeb9-e417f6079645" />
+
+3-1. **클래스별 성별 평균 생존 비율** <br />
+   <img src="https://github.com/user-attachments/assets/3569bf57-c700-4591-bbda-78f46011ec91" />
+
+3-2. **성별 평균 생존 비율** <br />
+   <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
+
+4. **클래스별 연령 분포** <br />
+   <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
+
+5. **항구별 클래스 인원 비율** <br />
+   <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />   
+
+## ➕ 결론 및 제안
+ 1. 3등급 승객의 사망 비율이 높음: 3등급 승객 중에서 자녀를 동반한 비율이 높으며 이들 중 사망 비율도 높은 것으로 나타났습니다.
+ 2. 남성의 사망 비율이 특히 높음: 3등급 승객 중 남성의 사망 비율이 특히 높다는 결과를 확인했습니다.
+    
+ ### ❕ 대상 고객층
+ 30-40대 여성 타겟, 특히 가족의 가장이 사망했을 때, 사망 비율이 높은 상황을 반영하여 보험 상품을 설계하는 것이 유리할 것이라 생각했습니다.
+ ### ❕ 보험 상품 제안 
+ 가족의 가장이 사망할 경우, 특히 3등급 승객과 같은 상황을 고려하여 적절한 보장과 지원을 제공하는 보험 상품을 개발하는 것을 제안 드립니다.
+
