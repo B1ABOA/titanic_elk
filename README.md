@@ -136,15 +136,17 @@
   </tr>
 </table>
 
-- 2와 3의 분석과 관련된 연구 논문
-https://www.pnas.org/doi/abs/10.1073/pnas.0911303107 </br>
+ > 2와 3의 분석과 관련된 연구 논문
+      "https://www.pnas.org/doi/abs/10.1073/pnas.0911303107"
+      - 타이타닉호의 생존자들 중 여성과 어린이 그리고 상대적으로 가격이 높은 등급 객실의 사람들의 생존율이 높은 원인에 대해서 연구
+
 
 
 4. **클래스별 연령 분포** <br />
    <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
 
-5. **동반 인원 수별 등급 비율** <br />
-   <img src="https://github.com/user-attachments/assets/a18af5c9-157d-446f-9f79-63db0fdec22b" />
+5. **동반 자식 유무별 생존율** <br />
+   <img src="https://github.com/user-attachments/assets/9f40e44b-07a9-4e78-bd0e-2756f3f07925" />
    
 
 6. **클래스별 성별 평균 생존 비율** <br />
