@@ -5,7 +5,7 @@
 
 
 
-|                                         노솔리(AB)                                          |                                      박웅빈(A)                                      |                                        이주원(B)                                        |                                         홍민영(O)                                          |
+|                                         노솔리(🩸AB)                                          |                                      박웅빈(🩸A)                                      |                                        이주원(🩸B)                                        |                                         홍민영(🩸O)                                          |
 | :-------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | <img  width="100px" src="https://avatars.githubusercontent.com/soljjang777" /> | <img width="100px" src="https://avatars.githubusercontent.com/Ungbbi" /> | <img width="100px" src="https://avatars.githubusercontent.com/2oo1s"/> |     <img width="100px" src="https://avatars.githubusercontent.com/u/65701100?v=4"/>     |
 |                       [@soljjang777](https://github.com/soljjang777)                        |           [@Ungbbi](https://github.com/Ungbbi)           |                      [@2oo1s](https://github.com/2oo1s)                      |                    [@HongMinYeong](https://github.com/HongMinYeong)                     |
@@ -29,8 +29,6 @@
    tar -xvzf mysql-connector-java-8.0.18.tar.gz
    # JDBC 드라이버 JAR 파일을 Logstash의 디렉토리에 복사
    sudo cp mysql-connector-java-8.0.18/mysql-connector-java-8.0.33.jar /usr/share/logstash/logstash-core/lib/jars/
-
-
 
 2. **Logstash 설정 파일 작성:**
    - /etc/logstash/conf.d/ 경로에 생성
@@ -86,7 +84,7 @@
 
 ### 타이타닉호의 객실
 - 타이타닉호는 당시의 최신 기술로 만들어진 **고급 여객선**이었습니다.
-- 1등급과 2등급 객실은 상당히 비쌌으나, 3등급 객실은 상대적으로 저렴한 가격으로 제공되었습니다. 경제적으로 여유가 있는 사람들이 3등급 객실을 이용했습니다.
+- 1등급과 2등급 객실은 상당히 비쌌으나, 3등급 객실은 상대적으로 저렴한 가격으로 제공되었습니다.
 - 대서양 횡단 항로를 제공하며 많은 사람들을 수송할 수 있는 대형 선박이었고, 이로 인해 3등급 객실에 많은 승객을 수용할 수 있었습니다.
 
 
@@ -99,6 +97,10 @@
 
 
 ## 📊 분석 데이터 시각화
+### 📚 테이블 구조 
+<img src="https://github.com/user-attachments/assets/203f41db-b3e0-4184-b905-b015c913febc" />
+
+
 1. **동반 인원 수별 등급 비율** <br />
    <img src="https://github.com/user-attachments/assets/a18af5c9-157d-446f-9f79-63db0fdec22b" />
 
