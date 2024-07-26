@@ -136,6 +136,10 @@
   </tr>
 </table>
 
+- 2와 3의 분석과 관련된 연구 논문
+https://www.pnas.org/doi/abs/10.1073/pnas.0911303107 </br>
+
+
 4. **클래스별 연령 분포** <br />
    <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
 
