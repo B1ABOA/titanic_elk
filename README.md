@@ -80,8 +80,13 @@
    <img src="https://github.com/user-attachments/assets/105fc49f-cefe-4293-9972-377460f51134" />
 
 2. **등급별 생존 비율** <br />
-   <img width="450" alt="image" src="https://github.com/user-attachments/assets/5564b43c-73ff-4699-a5f9-afffb0976ce9"/>
-   <img width="450" alt="image" src="https://github.com/user-attachments/assets/3df09c67-bc45-47ec-9f1f-0eef204b35bb">
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/5564b43c-73ff-4699-a5f9-afffb0976ce9" alt="등급별 생존 비율 1" width="450"></td>
+    <td><img src="https://github.com/user-attachments/assets/3df09c67-bc45-47ec-9f1f-0eef204b35bb" alt="등급별 생존 비율 2" width="450"></td>
+  </tr>
+</table>
+
 
 3-1. **클래스별 성별 평균 생존 비율** <br />
    <img src="https://github.com/user-attachments/assets/1a3c0989-f1c4-4da2-bff7-ebff9e1cc788" />
@@ -96,7 +101,7 @@
    <img src="https://github.com/user-attachments/assets/2080e185-ac0b-43b7-acf6-83e78d9fe8b2"/>
 
 5. **항구별 클래스 인원 비율** <br />
-   <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />   
+   <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />
 
 ## ➕ 결론 및 제안
  1. 3등급 승객의 사망 비율이 높음: 3등급 승객 중에서 자녀를 동반한 비율이 높으며 이들 중 사망 비율도 높은 것으로 나타났습니다.
