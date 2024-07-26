@@ -14,6 +14,15 @@
 ## ⚙️ 설정
 
 1. **MySQL JDBC 드라이버 다운로드:**
+   
+    config 파일을 작성하기 전에 JDBC는 기본적으로 제공되지가 않기 때문에 다운로드해야 합니다.
+    
+   JDBC는 다양한 데이터 소스에 대응하는 많은 인풋 플러그인을 가지고 있고 플러그인 구조로 확장이 가능하기 때문 
+   
+   -> 모든 데이터 소스에서 데이터를 불러오는 데 편리하게 활용. 
+      
+   => 즉 쉽게 말해 DB에서 logstash를 연동해 주는 플러그인이라고 생각하면 됩니다.
+
    ```bash
    # 다운로드
    wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.18.zip
