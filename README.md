@@ -1,9 +1,15 @@
 # 📊 ELK 스택을 이용한 타이타닉 데이터 분석
 
+
+## 👩‍💻 팀원 소개
+
+
+
 |                                         노솔리                                          |                                      박웅빈                                      |                                        이주원                                        |                                         홍민영                                          |
 | :-------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | <img  width="100px" src="https://avatars.githubusercontent.com/soljjang777" /> | <img width="100px" src="https://avatars.githubusercontent.com/Ungbbi" /> | <img width="100px" src="https://avatars.githubusercontent.com/2oo1s"/> |     <img width="100px" src="https://avatars.githubusercontent.com/u/65701100?v=4"/>     |
 |                       [@soljjang777](https://github.com/soljjang777)                        |           [@Ungbbi](https://github.com/Ungbbi)           |                      [@2oo1s](https://github.com/2oo1s)                      |                    [@HongMinYeong](https://github.com/HongMinYeong)                     |
+
 
 
 ## 프로젝트 개요
