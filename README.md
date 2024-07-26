@@ -77,14 +77,14 @@
 
 ## 📊 분석 데이터 시각화
 1. **동반 인원 수별 등급 비율** <br />
-   <img src="https://github.com/user-attachments/assets/e2adb8c6-0693-44fc-95e6-85710edd00de" />
+   <img src="https://github.com/user-attachments/assets/105fc49f-cefe-4293-9972-377460f51134" />
 
 2. **등급별 생존 비율** <br />
-   <img width="450" alt="image" src="https://github.com/user-attachments/assets/245a3ff2-7c0a-4c1c-aeb9-e417f6079645"/>
+   <img width="450" alt="image" src="https://github.com/user-attachments/assets/5564b43c-73ff-4699-a5f9-afffb0976ce9"/>
    <img width="450" alt="image" src="https://github.com/user-attachments/assets/3df09c67-bc45-47ec-9f1f-0eef204b35bb">
 
 3-1. **클래스별 성별 평균 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/3569bf57-c700-4591-bbda-78f46011ec91" />
+   <img src="https://github.com/user-attachments/assets/1a3c0989-f1c4-4da2-bff7-ebff9e1cc788" />
 
 3-2. **성별 평균 생존 비율** <br />
    <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
