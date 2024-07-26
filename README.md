@@ -8,7 +8,7 @@
 
 ## 프로젝트 개요
 
-이 프로젝트는 Kaggle의 타이타닉 데이터를 Ubuntu 서버에서 ELK(Elasticsearch, Logstash, Kibana) 스택을 설정하여 분석하는 과정을 보여줍니다. 
+이 프로젝트는 [Kaggle의 타이타닉 데이터](https://www.kaggle.com/competitions/titanic/data?select=train.csv)를 Ubuntu 서버에서 ELK(Elasticsearch, Logstash, Kibana) 스택을 설정하여 분석하는 과정을 보여줍니다. 
 타이타닉 데이터는 MySQL에 저장되고, Elasticsearch를 통해 불러온 뒤, Kibana를 사용하여 시각화합니다.
 
 ## ⚙️ 설정
@@ -21,8 +21,7 @@
    tar -xvzf mysql-connector-java-8.0.18.tar.gz
    # JDBC 드라이버 JAR 파일을 Logstash의 디렉토리에 복사
    sudo cp mysql-connector-java-8.0.18/mysql-connector-java-8.0.33.jar /usr/share/logstash/logstash-core/lib/jars/
-
-
+   ```
 
 2. **Logstash 설정 파일 작성:**
    - /etc/logstash/conf.d/ 경로에 생성
@@ -51,7 +50,9 @@
       index => "titanic"
     }
    }
- 4. **elasticsearch & logstash 재가동:**
+   ```
+   
+ 3. **elasticsearch & logstash 재가동:**
     ```bash
     # 재가동
     sudo systemctl restart elasticsearch
@@ -59,6 +60,7 @@
     # 가동 확인
     sudo systemctl status elasticsearch
     sudo systemctl status logstash
+    ```
 
 ## 📝 타이타닉 데이터 분석
 
