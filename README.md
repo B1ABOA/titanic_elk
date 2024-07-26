@@ -100,11 +100,29 @@
 ### 📚 테이블 구조 
 <img src="https://github.com/user-attachments/assets/203f41db-b3e0-4184-b905-b015c913febc" />
 
+1. **항구별 클래스 인원 비율** <br />
+   <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />
 
-1. **동반 인원 수별 등급 비율** <br />
-   <img src="https://github.com/user-attachments/assets/a18af5c9-157d-446f-9f79-63db0fdec22b" />
+   > **영국 항구와 타이타닉호 3등급 승객 분포**
+   >
+   > 다음 그래프를 보면 영국 항구가 3등급 승객이 가장 많이 분포한 것을 확인할 수 있습니다. 이는 타이타닉호가 출   항한 1912년도 시대적 배경에 맞춰 영국의 시대적 상황과 밀접한 연관이 있습니다.
+   >
+   > **영국의 시대적 상황 (1912년)**:
+   > - **영국의 산업혁명**: 타이타닉 사건이 일어났던 해는 1912년으로 영국의 후기 산업혁명시기(1870년대 - 1900년대) 입니다. 오랜 산업혁명으로 노동 환경의 변화와 경제 구조 변화로 인해 여가 시간과 경제적 여유가 생겨서 승선 승객이 많은걸 알 수 있었습니다. 
+   > - **타이타닉호의 출항**: 타이타닉호는 영국의 주요 항구에서 출항했으며, 고급 여객선으로서 1등급과 2등급 객실은 비쌌지만, 3등급 객실은 상대적으로 저렴했습니다. 많은 이민자들이 경제적 이유로 3등급 객실을 선택했고, 이로 인해 영국 항구에서 3등급 승객이 많이 분포하게 되었습니다.
 
-2. **등급별 생존 비율** <br />
+> 영국의 산업노동자 승객 타겟으로한 여행상품을 더많들수있다. 
+
+2. **성별 평균 생존 비율** <br />
+<table>
+  <tr>
+    <td> <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
+    </td>
+    <td> <img src="https://github.com/user-attachments/assets/2080e185-ac0b-43b7-acf6-83e78d9fe8b2"/></td>
+  </tr>
+</table>
+
+3. **등급별 생존 비율** <br />
 <table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/5564b43c-73ff-4699-a5f9-afffb0976ce9" alt="등급별 생존 비율 1" width="450"></td>
@@ -112,21 +130,21 @@
   </tr>
 </table>
 
-
-3-1. **클래스별 성별 평균 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/d70490c3-6786-460d-9e87-a21c36bb0a01" />
-
-3-2. **성별 평균 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/b5c7f42d-43f3-4387-b9b8-4f4adaa3d69f" />
-
-4-1. **클래스별 연령 분포** <br />
+4. **클래스별 연령 분포** <br />
    <img src="https://github.com/user-attachments/assets/0c66ad0d-cedb-4e7c-b820-2a984657a6dd" />
-   
-4-2. **연령대별 생존 비율** <br />
-   <img src="https://github.com/user-attachments/assets/2080e185-ac0b-43b7-acf6-83e78d9fe8b2"/>
 
-5. **항구별 클래스 인원 비율** <br />
-   <img src="https://github.com/user-attachments/assets/bc1b4e47-3149-4d96-8852-206868c1a106" />
+5. **동반 인원 수별 등급 비율** <br />
+   <img src="https://github.com/user-attachments/assets/a18af5c9-157d-446f-9f79-63db0fdec22b" />
+   
+
+6. **클래스별 성별 평균 생존 비율** <br />
+<table>
+  <tr>
+    <td> <img src="https://github.com/user-attachments/assets/d70490c3-6786-460d-9e87-a21c36bb0a01" /></td>
+    <td><img src="https://github.com/user-attachments/assets/d7b7e25e-26d2-472b-a392-7be265c8b2a3"></td>
+  </tr>
+</table>
+
 
 ## ➕ 결론 및 제안
  1. 3등급 승객의 사망 비율이 높음: 3등급 승객 중에서 자녀를 동반한 비율이 높으며 이들 중 사망 비율도 높은 것으로 나타났습니다.
